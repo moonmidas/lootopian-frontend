@@ -1,0 +1,165 @@
+/* make .nav-link text-decoration show underline */
+.nav-link {
+  text-decoration: underline;
+}
+
+.lootopian-success {
+  border: dashed;
+  border-width: thick;
+  border-color: white;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #a8a0d9;
+}
+.nes-container.is-dark {
+  margin: 3px !important;
+  background-color: #27224d !important;
+}
+.nes-container.is-dark.with-title > .title {
+  background-color: #27224d !important;
+}
+
+.nes-btn.is-primary {
+  color: #fff;
+  background-color: #9741bf !important;
+}
+.nes-btn.is-primary::after {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  content: "";
+  box-shadow: inset -4px -4px #483d8b !important;
+}
+.word-break {
+  word-break: break-word;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.nes-btn {
+  margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+  padding: 0 2rem;
+  margin: 10 2rem;
+  background-color: #1b1640;
+  color: white;
+}
+
+#nescss > .container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.bg-dark {
+  background-color: #1b1640 !important;
+}
+
+.nes-select {
+  color: #212529;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  border-bottom: 4px solid #d3d3d3;
+  background-color: #27224d;
+  color: white;
+}
+
+header > .container {
+  display: flex;
+  align-items: baseline;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+header > .container > .nav-brand {
+  margin-right: auto;
+}
+header > .container > .social-button {
+  margin-left: auto;
+}
+
+.nav-brand .brand-logo {
+  margin-right: 1rem;
+}
+.nav-brand > a {
+  color: #27224d;
+  text-decoration: none;
+}
+
+.social-buttons p {
+  margin-bottom: 0;
+}
+
+/* Header-sticky */
+header.sticky > .container {
+  font-size: 0.8rem;
+  padding: 0;
+  align-items: center;
+}
+header.sticky .nav-brand h1 {
+  margin: 0;
+}
+header.sticky .nav-brand p {
+  display: none;
+  margin-bottom: 0;
+  font-size: 0.6rem;
+}
+
+/* Main */
+.main-content {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: calc(980px - 4rem)) {
+  header > .container {
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0.5rem 0.5rem;
+    padding: 0;
+  }
+
+  header > .container {
+    margin: 0 0.5rem;
+  }
+
+  .github-link {
+    display: none;
+  }
+
+  .message-list > .message > .nes-balloon {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #nescss > .container {
+    margin-top: 190px;
+  }
+}
